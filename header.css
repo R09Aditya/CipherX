@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: #9f9eac;
+  background-image: url("images/bg.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 120px;
+  flex-wrap: wrap;
+}
+header a {
+  color: rgb(47, 47, 47);
+  cursor: pointer;
+}
+.logo {
+  height: 70px;
+}
+
+.hcflag {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  border: 0;
+  width: 256px;
+  z-index: 999;
+}
+
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+header nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile menu */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .menu-toggle {
+    display: block; /* show hamburger */
+  }
+
+  header nav {
+    display: none; /* hide menu by default */
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  header nav.active {
+    display: flex; /* show when active */
+  }
+
+  header nav a {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+}

@@ -1,0 +1,42 @@
+.leaders {
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.leaders h1 {
+  font-size: 3rem;
+  color: #000;
+}
+
+.leaders-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.leader-card {
+  flex: 1 1 300px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.leader-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #000;
+  margin-bottom: 15px;
+}
+
+.leader-card h3 {
+  font-size: 1.3rem;
+  margin: 10px 0 5px;
+  color: #000;
+}
+
+.leader-card p {
+  font-size: 0.95rem;
+  color: #333;
+}

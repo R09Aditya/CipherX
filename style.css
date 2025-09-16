@@ -1,0 +1,401 @@
+main {
+  padding-top: 190px;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 80px;
+  font-weight: bolder;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  font-family: 'Exo 2', sans-serif;
+}
+
+.span {
+  -webkit-text-stroke: 2px currentcolor;
+  -webkit-text-fill-color: transparent;
+}
+
+.welcome {
+  font-size: 80px;
+  font-weight: bolder;
+  margin: 0;
+  color: rgb(0, 0, 0);
+  font-family: 'Exo 2', sans-serif;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.cipher {
+  display: inline-block;
+}
+.cipher-block {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; /* space between Cipher text & X */
+}
+
+.cipher-block img {
+  height: 80px;
+  width: 80px;
+}
+
+.text img {
+  height: 80px;
+  width: 80px;
+}
+
+.mtext {
+  font-size: 25px;
+  line-height: 1.5;
+  color: rgb(0, 0, 0);
+  font-family: 'Exo 2', sans-serif;
+}
+
+:root {
+  --darkblue: #000000;
+  --offwhite: #ec3750;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  border: none;
+  font-size: 18px;
+  transition: color 0.5s, transform 0.2s, background-color 0.2s;
+  outline: none;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 20px 30px;
+  border: 3px solid transparent;
+}
+
+button:active {
+  transform: translateY(3px);
+}
+
+.shrink-border {
+  background-color: transparent;
+}
+
+.shrink-border:hover {
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--offwhite);
+}
+
+.shrink-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--darkblue);
+  transition: opacity 0.3s, border 0.3s;
+}
+
+.shrink-border:hover::before {
+  opacity: 0;
+}
+
+.shrink-border::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid var(--offwhite);
+  opacity: 0;
+  z-index: -1;
+  transform: scaleX(1.1) scaleY(1.3);
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.shrink-border:hover::after {
+  opacity: 1;
+  transform: scaleX(1) scaleY(1);
+}
+
+
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 160px 10%;
+    font-family: 'Exo 2', sans-serif;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+    color: #111;
+}
+
+.about-text h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.leaders-btn {
+    background: linear-gradient(135deg, #111, #444);
+    color: #fff;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.leaders-btn:hover {
+    background: linear-gradient(135deg, #444, #111);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
+.why-join {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 10%;
+    font-family: 'Exo 2', sans-serif;
+    gap: 40px;
+}
+
+.why-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.why-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.why-text {
+    flex: 1;
+    text-align: left;
+    color: #111;
+}
+
+.why-text h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.why-text ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.why-text li {
+    margin-bottom: 15px;
+}
+
+
+
+
+@media (max-width: 900px) {
+    .why-join {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .why-text {
+        text-align: center;
+    }
+}
+
+
+.cta-section {
+  margin: 50px auto;
+  padding: 10px;
+  font-family: 'Arial', sans-serif;
+  color: #111;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.textjoin {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+  max-width: 500px;
+}
+.textjoin h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.textjoin p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+  header {
+    padding: 30px 60px;
+  }
+
+  main h1 {
+    font-size: 60px;
+  }
+
+  main p {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 18px 28px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+  }
+
+  .logo {
+    height: 55px;
+  }
+
+  .hcflag {
+    height: 65px;
+    margin-left: 10px;
+    top: 0;
+  }
+
+  header nav {
+    margin-top: 0;
+    text-align: right;
+  }
+
+  header nav a {
+    font-size: 16px;
+    margin: 6px;
+    display: inline-block;
+  }
+
+  main {
+    padding-top: 100px;
+  }
+
+  main h1 {
+    font-size: 40px;
+  }
+
+  main p {
+    font-size: 18px;
+  }
+
+  button {
+    width: auto;
+    margin: 8px;
+    font-size: 15px;
+    padding: 15px 20px;
+  }
+}
+
+
+
+
+@media (max-width: 1024px) {
+  main {
+    padding-top: 120px;
+  }
+  .welcome {
+    font-size: 60px;
+  }
+  .mtext {
+    font-size: 20px;
+  }
+  .text img {
+    height: 65px;
+    width: 65px;
+  }
+}
+@media (max-width: 600px) {
+  .welcome {
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .cipher-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;  /* pushes CipherX down as a block */
+  }
+
+  .cipher-block img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .mtext {
+    font-size: 18px;
+    padding: 0 15px;
+  }
+}

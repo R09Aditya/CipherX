@@ -1,0 +1,92 @@
+.contact {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.contact p {
+  font-size: larger;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+}
+
+.contact-info {
+  flex: 1 1 300px;
+  text-align: left;
+  align-self: center;
+}
+
+.contact-info h3 {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+.contact-info a {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  flex: 1 1 300px;
+  text-align: left;
+}
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.ad { border-right: 1px solid black;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+.ar{ 
+  border-left: 1px solid black;
+  width: 100%;
+  align-items: center;
+  text-align: center; 
+}
+
+.anker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  justify-content: center;
+}
+
+.social-logo {
+  height: 20px;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
