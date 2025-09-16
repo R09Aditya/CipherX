@@ -6,7 +6,8 @@ Welcome to the official website of **CipherX – Cipher Research and Analysis Wi
 CipherX is a community for curious minds who want to explore:  
 - 💻 Programming (HTML, CSS, JavaScript, PHP, SQL, Java, etc.)  
 - 🔒 Ethical Hacking & Cybersecurity  
-- 🌍 Networking & Server Administration  
+- 🌍 Networking & Server Administration
+- 📡 Internet of Things (IoT)
 - 🤝 Collaboration on Real-world Projects  
 
 Our mission is to provide a **platform for students** who don’t have access to professional technical training in their city. CipherX bridges the gap by offering a space where learners can:  
