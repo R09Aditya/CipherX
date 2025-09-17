@@ -1,6 +1,6 @@
 # CipherX Club Website  
 
-Welcome to the official website of **CipherX – Cipher Research and Analysis Wing**, a student-driven tech club built to empower learners in coding, ethical hacking, and cybersecurity.  
+Welcome to the official website of **CipherX**, a student-driven tech club built to empower learners in coding, ethical hacking, and cybersecurity.  
 
 ## 🌐 About CipherX  
 CipherX is a community for curious minds who want to explore:  
