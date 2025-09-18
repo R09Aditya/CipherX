@@ -38,7 +38,7 @@ main h1 {
 .cipher-block {
   display: inline-flex;
   align-items: center;
-  gap: 8px; /* space between Cipher text & X */
+  gap: 8px;
 }
 
 .cipher-block img {
@@ -274,15 +274,24 @@ button:active {
   padding: 20px;
   text-align: left;
   max-width: 500px;
+  align-items: center;
+  align-content: center;
 }
 .textjoin h1 {
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 15px;
 }
 .textjoin p {
   font-size: 20px;
   line-height: 1.5;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.form {
+  flex: 1;
+  padding: 20px;
+  max-width: 500px;
 }
 
 
@@ -386,7 +395,7 @@ button:active {
   .cipher-block {
     display: flex;
     justify-content: center;
-    margin-top: 10px;  /* pushes CipherX down as a block */
+    margin-top: 10px;
   }
 
   .cipher-block img {
